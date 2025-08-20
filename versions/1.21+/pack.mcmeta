@@ -4,6 +4,6 @@
         "supported_formats": [45, 81],
         "min_format": 45,
         "max_format": 999,
-        "description": "§e位运算库§6 v1.0.0\n§a适用于§2 1.21+"
+        "description": "§e位运算库§6 v1.0.1\n§a适用于§2 1.21+"
     }
 }
