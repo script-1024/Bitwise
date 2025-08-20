@@ -51,5 +51,5 @@
 | [`bitwise:xor`](data\bitwise\function\xor.mcfunction) | 接受两个参数 `a` `b`，进行 **异或** 操作，返回 `a ^ b`    |
 | [`bitwise:and`](data\bitwise\function\and.mcfunction) | 接受两个参数 `a` `b`，进行 **按位与** 操作，返回 `a & b`  |
 | [`bitwise:or`](data\bitwise\function\or.mcfunction)   | 接受两个参数 `a` `b`，进行 **按位或** 操作，返回 `a \| b` |
-| [`bitwise:left_shift`](data\bitwise\function\left_shift.mcfunction) | 接受两个参数 `a` `b`，进行 **左移** 操作，返回 `a << b` <br/>( 注：在许多编程语言中，当 `b` 为负数时结果未定义。本数据包因算法原因，会无视 `b` 的符号，将其视作正数处理。 ) |
-| [`bitwise:right_shift`](data\bitwise\function\right_shift.mcfunction) | 接受两个参数 `a` `b`，进行 **右移** 操作，返回 `a >> b` <br/>( 注：在许多编程语言中，当 `b` 为负数时结果未定义。本数据包因算法原因，会无视 `b` 的符号，将其视作正数处理。 ) |
+| [`bitwise:left_shift`](data\bitwise\function\left_shift.mcfunction) | 接受两个参数 `a` `b`，进行 **左移** 操作，返回 `a << b` <br/>( 注：当位移量 `b` 为负数时结果未定义。 ) |
+| [`bitwise:right_shift`](data\bitwise\function\right_shift.mcfunction) | 接受两个参数 `a` `b`，进行 **右移** 操作，返回 `a >> b` <br/>( 注：当位移量 `b` 为负数时结果未定义。 ) |
