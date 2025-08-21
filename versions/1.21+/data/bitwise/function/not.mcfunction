@@ -3,8 +3,7 @@
 #   scoreboard players set #a param <value>
 #   execute store result score ... run function bitwise:not
 #* ---
-# RESULT = -A
-# RESULT -= 1
+# RESULT = (-A) - 1
 # return RESULT
 
 scoreboard players operation #result local = #a param

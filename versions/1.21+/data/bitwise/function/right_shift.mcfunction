@@ -5,7 +5,7 @@
 #   execute store result score ... run function bitwise:right_shift
 #* ---
 # RESULT = A; N = 2
-# while (B != 0)
+# while (B > 0)
 #   if (B % 2 == 1)
 #       RESULT /= N
 #   N *= N; B /= 2
@@ -14,7 +14,8 @@
 scoreboard players operation #result local = #a param
 scoreboard players set #n local 2
 scoreboard players operation #b local = #b param
-function bitwise:private/rsh
+execute if score #b local matches 1.. run function bitwise:private/rsh
+scoreboard players reset #t local
 scoreboard players reset #b local
 scoreboard players reset #n local
 return run scoreboard players get #result local
