@@ -2,8 +2,11 @@
 一个能在 Minecraft 中进行按位操作 (bitwise operation) 的数据包。<br/>
 你可以随意将其添加到自己的项目当中。
 
-## 使用方式
-- 使用记分板传参
+A datapack that enables bitwise operations in Minecraft.<br/>
+You can add this datapack to your own projects.
+
+## 使用方式 Usage
+- 使用记分板传参 Passing parameters via scoreboard
     ```
     # 传递参数
     scoreboard players set #a param <value>
@@ -17,7 +20,7 @@
     execute store result ... run scoreboard players get #result local
     ```
 
-- 使用宏传参
+- 使用宏传参 Passing parameters using macros
     ```
     # 传递参数 - 方式 1
     ... function bitwise:macro/<operation> { a: <value>, b: <value> }
